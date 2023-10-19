@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="nav">
+            <h1>Books</h1>
+            <h1>Record</h1>
+            <h1>Keeper</h1>
+        </div>
+        <div id="semi">
+            <div class="btn"><div class="function"><button type="button" id="add">Add Book</button></div></div>
+            <dialog id="dialog">
+                <form id='myForm'>
+                <div>
+                <label for="bookname">Book Name:</label> 
+                <input type="text" id="bookname" name="bookName">
+            </div>
+                <div>
+                <label for="authorname">Author Name:</label> 
+                <input type="text" id="authorname" name="authorName">
+            </div>
+                <div>
+                <label for="pages">Pages:</label> 
+                <input type="text" id="pages" name="pages">
+            </div>
+            <div>
+                <label for="readStatus">Read:</label>
+                <input type="checkbox" id="readStatus" name="readStatus">
+            </div>
+                <input id='submit' type="submit" value="submit">
+            </form>
+            <div id="close"><h3>X</h3></div>
+        </dialog>
+        <div id="library">  
+            <div class="card">
+                <h2 id='title'>Title</h2>
+                <h3 id='author'>Author</h3>
+                <h4 id='page'>Pages</h4>
+                <button type="button" class='read'>Read</button>
+                <button type="button" class='delete'>Delete</button>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
